@@ -15,6 +15,8 @@ for line in open('input.txt', 'r'):
 
 tot = []
 for v in dirs.values(): #loop over dir sizes
-    if v >= dirs['']-40_000_000: # check if dir frees up enough space
+    if v >= dirs['']-40_000_000: # check if dir frees up enough space 70_000_000-30_000_000
         tot.append(v) # append dir to list
 print(min(tot))
+
+print(dirs)

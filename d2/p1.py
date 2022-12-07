@@ -22,5 +22,5 @@ count=0
 for line in lines:
     p1, p2 = line.rstrip('\r\n').split(' ')
     count += getResult(p1, p2)
-    print(getResult(p1, p2))
+    
 print("Total score: ", count)
