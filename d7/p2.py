@@ -19,4 +19,4 @@ for v in dirs.values(): #loop over dir sizes
         tot.append(v) # append dir to list
 print(min(tot))
 
-print(dirs)
+print(max(dirs.values()))
