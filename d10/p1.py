@@ -1,5 +1,3 @@
-
-
 s = []
 with open(r"input.txt") as f:
     for line in f.readlines():
@@ -13,8 +11,6 @@ x=1
 addc = 0
 tot = 0
 while counter < len(s):
-    #if clock == 11:
-        #print([x-2,x-1,x])
     if clock % 40 == 0: check = 40
     if clock % 40 != 0: check = clock % 40
     if check -1 in [x-1,x,x+1]:
@@ -24,9 +20,7 @@ while counter < len(s):
     if (clock % 40 ) == 0:
         print()
     if (clock -20) % 40 == 0:
-        #print(clock*x)
         tot += clock*x
-    
     match s[counter][0]:
         case 'noop': counter += 1; clock += 1
         case 'addx':
@@ -38,13 +32,4 @@ while counter < len(s):
             else:
                 addc = 1
                 clock += 1
-            
-
-            
-            
-    
-    
 print("Part1:", tot)
-
-
-
