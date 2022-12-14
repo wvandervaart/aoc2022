@@ -1,3 +1,7 @@
+import timeit
+
+start = timeit.default_timer()
+
 import collections
 import string
  
@@ -31,3 +35,9 @@ for r in range(len(rows)):
         if rows[r][c] == "E":
             rows[r][c] = "z"
             print(distance((r, c)))
+
+#Your statements here
+
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)  

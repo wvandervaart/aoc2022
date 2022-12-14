@@ -14,7 +14,9 @@ for line in open('input.txt', 'r'):
                 dirs[d] += int(s)
 
 tot = 0
+print(dirs)
 for v in dirs.values():
     if v <= 100_000:
+        print(v)
         tot += v
 print(tot)
